@@ -1,0 +1,98 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    background-image: url('default.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 60px;
+  }  
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  /* background: sienna; */
+}
+
+.funfact {
+  padding: 25px;
+  text-align: left;
+  font-size: 20px;
+}
+  
+.face {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.face::before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  width: 100px;
+  height: 50px;
+  background: sandybrown;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 0.5s;
+}
+
+.face:hover::before {
+  top: 100px;
+  width: 80px;
+  height: 20px;
+  background: sandybrown;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+  
+.eyes {
+  position: relative;
+  top: -20px;
+  display: flex;
+}  
+
+.eyes .eye {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: white;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.eyes .eye::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate (-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+}
+
+.current-forcast {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px black;
+  padding: 50px;
+  border-radius: 10px;
+  position: relative;
+  visibility: hidden;
+  margin-top: 80px;
+}
+
