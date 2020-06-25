@@ -15,58 +15,11 @@
     <div class="row expanded app-dashboard-top-nav-bar">
       <div class="columns medium-2">
         <button data-toggle="app-dashboard-sidebar" class="menu-icon hide-for-medium"></button>
-        <a class="app-dashboard-logo">Foundation</a>
+        <a class="app-dashboard-logo">Way-key</a>
       </div>
     </div>
   
     <div class="app-dashboard-body off-canvas-wrapper">
-      <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
-        <div class="app-dashboard-sidebar-title-area">
-          <div class="app-dashboard-close-sidebar">
-            <h3 class="app-dashboard-sidebar-block-title">Items</h3>
-            <!-- Close button -->
-            <button id="close-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu" type="button">
-              <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-left"></i></a></span>
-            </button>
-          </div>
-          <div class="app-dashboard-open-sidebar">
-            <button id="open-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-open-sidebar-button show-for-medium" aria-label="open menu" type="button">
-              <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-right"></i></a></span>
-            </button>
-          </div>
-        </div>
-        <div class="app-dashboard-sidebar-inner">
-          <ul class="menu vertical">
-            <li><a href="#" class="is-active">
-              <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Buildings</span>
-            </a></li>
-            <li><a>
-              <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Time</span>
-            </a></li>
-            <li><a>
-              <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">Industry</span>
-            </a></li>
-            <li><a href="#" class="is-active">
-              <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Buildings</span>
-            </a></li>
-            <li><a>
-              <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Time</span>
-            </a></li>
-            <li><a>
-              <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">Industry</span>
-            </a></li>
-            <li><a href="#" class="is-active">
-              <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Buildings</span>
-            </a></li>
-            <li><a>
-              <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Time</span>
-            </a></li>
-            <li><a>
-              <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">Industry</span>
-            </a></li>
-          </ul>
-        </div>
-      </div>
   
       <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
         <h2 class="text-center">Lorem Ipsum</h2>
@@ -82,29 +35,32 @@
               </ul>
             </div>
           </div>
-          <div class="large-6 columns">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="search">Search City</label>
+              <input type="text" class="form-control" id="current-search-zip">
+              <input type="text" class="form-control" id="current-search-country">
+            </div>
+            ​<button type="submit" class="btn btn-default" id="btnSearch"> <i class="fa fa-trash"></i> Search</button>
+            <button type="reset" class="btn btn-default" id="clear-all"> <i class="fa fa-trash"></i> Clear</button>
             <p></p>
+            <p></p>
+            <p></p>
+            <h4>Recent searches</h4>
+            <div id="recent-searches">
+              <div class="col-8" id="current-city-data">
+                <h3 class="city-data" id="city-date"></h3>
+                 <div class="musicPlaylist">
+
+                 </div>
+                </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="small-3 columns">...</div>
-          <div class="small-9 columns">...</div>
-        </div>
-        <div class="row">
-          <div class="large-4 columns">...</div>
-          <div class="large-8 columns">...</div>
-        </div>
-        <div class="row">
-          <div class="small-6 large-5 columns">...</div>
-          <div class="small-6 large-7 columns">...</div>
-        </div>
-        <div class="row">
-          <div class="large-6 columns">...</div>
-          <div class="large-6 columns">...</div>
-        </div>
-      </div>
     </div>
   </div>
+</div>
+
   
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/logic.js"></script>
