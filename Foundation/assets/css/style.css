@@ -1,5 +1,73 @@
 
-.app-dashboard {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  /* background: sienna; */
+}
+  
+.face {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.face::before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  width: 100px;
+  height: 50px;
+  background: sandybrown;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 0.5s;
+}
+
+.face:hover::before {
+  top: 100px;
+  width: 80px;
+  height: 20px;
+  background: sandybrown;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+  
+.eyes {
+  position: relative;
+  top: -20px;
+  display: flex;
+}  
+
+.eyes .eye {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: white;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.eyes .eye::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate (-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+}
+
+/* .top-bar{
     height: 100vh;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8,17 +76,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  /* .app-dashboard-logo {
+    color: #fefefe;
+    text-transform: uppercase;
+    font-weight: bold;
+  } */
   
-  .app-dashboard-body {
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-  .app-dashboard-top-nav-bar {
+  /* .app-dashboard-top-bar-section {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -34,16 +99,19 @@
     -webkit-flex: 0 0 55px;
         -ms-flex: 0 0 55px;
             flex: 0 0 55px;
-  }
+  } */
   
-  .app-dashboard-top-nav-bar .menu-icon {
+  /* .app-dashboard-top-nav-bar .menu-icon {
     vertical-align: text-bottom;
-  }
+  } */
   
-  .app-dashboard-logo {
-    color: #fefefe;
-    text-transform: uppercase;
-    font-weight: bold;
+  /* .app-dashboard-body {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   
   .app-dashboard-search-bar-container {
@@ -98,18 +166,18 @@
   .app-dashboard-top-bar-actions .fa-info-circle {
     color: #fefefe;
     font-size: 1.5rem;
-  }
+  } */
   
-  .app-dashboard-sidebar {
+  /* .app-dashboard-sidebar {
     background-color: #fefefe;
     height: 100%;
     overflow-x: visible;
     overflow-y: auto;
     z-index: 1;
     transition: all 0.5s ease;
-  }
+  } */
   
-  .app-dashboard-sidebar .app-dashboard-open-sidebar, .app-dashboard-sidebar .app-dashboard-close-sidebar {
+  /* .app-dashboard-sidebar .app-dashboard-open-sidebar, .app-dashboard-sidebar .app-dashboard-close-sidebar {
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -141,9 +209,9 @@
   .app-dashboard-sidebar .fa.large {
     font-size: 1.5rem;
     width: 40px;
-  }
+  } */
   
-  .reveal-for-medium .app-dashboard-open-sidebar {
+  /* .reveal-for-medium .app-dashboard-open-sidebar {
     display: none;
   }
   
@@ -256,6 +324,6 @@
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
     }
-  }
+  } */
   
-  
+   
