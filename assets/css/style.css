@@ -1,16 +1,3 @@
-html {
-    position: relative;
-    min-height: 100%;
-  }
-
-  body {
-    background-image: url('default.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 60px;
-  }  
-
 
 .container {
   display: flex;
@@ -18,12 +5,6 @@ html {
   align-items: center;
   min-height: 30vh;
   /* background: sienna; */
-}
-
-.funfact {
-  padding: 25px;
-  text-align: left;
-  font-size: 20px;
 }
   
 .face {
@@ -86,13 +67,14 @@ html {
   border-radius: 50%;
 }
 
-.current-forcast {
-  background-color: rgba(0, 0, 0, 0.25);
-  box-shadow: 1px 1px 5px black;
-  padding: 50px;
-  border-radius: 10px;
-  position: relative;
-  visibility: hidden;
-  margin-top: 80px;
+li {
+  list-style-type: none;
 }
 
+.hide {
+  display: none;
+}
+
+.callout.large {
+  background-color: coral;
+}
