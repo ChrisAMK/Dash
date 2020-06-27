@@ -23,7 +23,7 @@ $(document).ready(function() {
     })
 
     function loadPlaylist(NplaylistId) {
-        var key = "AIzaSyDsXXxetxa3Pr8LUu5tVBIKw335yC4TpyM";
+        var key = "AIzaSyAVW_GnfoDXhBpj3GvhfxUR1GMHOVgNHng";
         playlistId = NplaylistId;
         var URL = "https://www.googleapis.com/youtube/v3/playlistItems";
         options = {
