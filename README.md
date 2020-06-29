@@ -1,4 +1,18 @@
-Press Release: Way-key
+Project Way-Key:
+We were given an assignment to come up with a website on our own using everything that we had learned so far during our Bootcamp course. 
 
-Got an important Hot Dates you cannot afford to miss? Lack of motivation to wake up in the morning? Trouble keeping track of your daily activities? Let Way-key transform your daily routine into a fun and motivational lifestyle. Way-key is developed to assist multi-level users to keep track of their busy schedule in this modern world . The special feature of this platform is to utilise Spotify music to add to alarm clock and scheduler. Whether you are exhausted from a big night out or feeling rebirth, select different playlist based on your current mood to kick start your day. The Schedule Planner is a versatile feature to let you keep track of your daily activities, events and so on by selecting specific music as a reminder. So let Way-key transform your day with your favourite music and never miss any appointment and most importantly - no more pressing on snooze button every ten minutes!
+Way Key User Story:
 
+As a busy professional I want to start my day with a summary of the weather, Music and fun facts.
+
+When I first open my app for the day
+Then I input how I slept last night and my energetic mood for the day
+
+When I open up to search the weather
+Then I am presented with a forecast for the day
+
+When I input my mood when I first wake up open up Spotify playlists
+Then I am given a list of playlists based on my mood / weather / day
+
+When I look at the fun fact of the day
+Then I am presented with a Fun Fact from an API
