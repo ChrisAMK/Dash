@@ -125,7 +125,7 @@ $(document).ready(function() {
             
         } else if (dayType > 800 && dayType <= 804) {
             // If Weather ID 800 - 899: Cloudy Playlist
-            var NplaylistId = "PLAHcIXAZ-7GbtHu8w8zXdZJxzEeRfJ1z1";
+            var NplaylistId = "PLxCJjCvFCkqTpFTz0kbvdP-u8CU0DbyAq";
             loadPlaylist(NplaylistId)
 
         } else {

@@ -1,18 +1,24 @@
 Project Way-Key:
-We were given an assignment to come up with a website on our own using everything that we had learned so far during our Bootcamp course. 
+Way-Key is an innovative program which automatically tracks your location, and provides you with a playlist depending on what the weather is in your area. We provide you with a youtube embedded video to view your music for the day and the ability to search the weather anywhere in the world.
+Also we included a joke generator. Just click the smiley face to bring a smile to yours.
 
-Way Key User Story:
+https://recordsword.github.io/Way-Key/
 
-As a busy professional I want to start my day with a summary of the weather, Music and fun facts.
+How to use:
+When you open our webpage, your location will be shown in the window where you can also search for the weather anywhere else in the world.
+When the weather is determined, a playlist will be generated based on this information. You can select any of the songs listed to view.
+If you want a joke, click the smiley face and a generated joke will appear on screen.
 
-When I first open my app for the day
-Then I input how I slept last night and my energetic mood for the day
+![landing-page](assets/pics/Way-Key site.JPG)
+![smiley-clicked](assets/pics/Way-Key site(Joke generated, city searched).JPG)
+![flow-chart-map](Project Planning/User Stories Map.png)
 
-When I open up to search the weather
-Then I am presented with a forecast for the day
+Technologies Utilised:
+jQuery
+Foundation
+OpenWeather API
+Youtube V3 API
+OpenCage API
 
-When I input my mood when I first wake up open up Spotify playlists
-Then I am given a list of playlists based on my mood / weather / day
-
-When I look at the fun fact of the day
-Then I am presented with a Fun Fact from an API
+Authors
+Chris Klinger, Veronica Lim, Nick Sword
