@@ -16,14 +16,17 @@ function eyeball(){
 $(document).ready(function() {
 
     navigator.geolocation.getCurrentPosition(function(position){
-        $.get( "https://api.opencagedata.com/geocode/v1/json?q=" + position.coords.latitude + "+" + position.coords.longitude + "&key=15e8e9250c1c49d2a45c34e9a5761a56", function(data) {
-                city = data.results[0].components.town
-                citySearch(city)
+        var geoLocCity = "https://api.opencagedata.com/geocode/v1/json?q=" + position.coords.latitude + "+" + position.coords.longitude + "&key=c846948fec9e400ca0be49cda9ad77d3"
+        $.get( geoLocCity, function(data) {
+                city = data.results[0].components.city
+                citySearch(city);
+                console.log(geoLocCity);
+                console.log(city);
         })
     })
-
+    
     function loadPlaylist(NplaylistId) {
-        var key = "AIzaSyDsXXxetxa3Pr8LUu5tVBIKw335yC4TpyM";
+        var key = "AIzaSyD73DBmggAT8Oyq8DbLKl9IxMOas6P42bw";
         playlistId = NplaylistId;
         var URL = "https://www.googleapis.com/youtube/v3/playlistItems";
         options = {
@@ -66,7 +69,7 @@ $(document).ready(function() {
     $(".musicPlaylist").empty();
     
     var searchitem = city
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchitem + "&units=metric&appid=82c89536a936fdf2b3461ac6bec2669f";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchitem + "&units=metric&appid=757f634095b01377ce64f302c19cc9db";
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -122,7 +125,7 @@ $(document).ready(function() {
             
         } else if (dayType > 800 && dayType <= 804) {
             // If Weather ID 800 - 899: Cloudy Playlist
-            var NplaylistId = "PLAHcIXAZ-7GbtHu8w8zXdZJxzEeRfJ1z1";
+            var NplaylistId = "PLxCJjCvFCkqTpFTz0kbvdP-u8CU0DbyAq";
             loadPlaylist(NplaylistId)
 
         } else {
@@ -134,6 +137,7 @@ $(document).ready(function() {
     }
 
     function getJoke() {
+
         var settings = {
             "async": true,
             "crossDomain": true,
@@ -150,10 +154,12 @@ $(document).ready(function() {
         });
     }
     
-    getJoke();
+    $(".face").on("click", function() {
+        getJoke();
+    });
 
     $("#btnSearch").on("click", function() {
-        city = ($("#current-search-zip").val());
+        city = ($("#current-search-city").val());
         citySearch(city)
     })
     

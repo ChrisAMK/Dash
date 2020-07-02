@@ -1,3 +1,25 @@
+body {
+  background-image: url("../pics/skeleton-key.jpg");
+  
+}
+
+.medium-pull-6 {
+  border: blueviolet;
+  background-color: beige;
+  opacity: 80%;
+}
+
+.btn {
+  background-color: lightblue;
+  border: solid darkblue;
+  border-radius: 5%;
+  font-size: 25px;
+}
+
+.btn:hover{
+  background-color: pink;
+  cursor: pointer;
+}
 
 .container {
   display: flex;
@@ -67,8 +89,25 @@
   border-radius: 50%;
 }
 
+#playlist-list {
+  list-style-type: disc;
+  background-color: cyan;
+  border:solid darkgreen;
+}
+
+#joke {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 li {
   list-style-type: none;
+  border:solid darkgreen;
+
+}
+
+li:hover{
+  background-color: pink;
+  cursor: pointer;
 }
 
 .hide {

@@ -1,4 +1,24 @@
-Press Release: Way-key
+Project Way-Key:
+Way-Key is an innovative program which automatically tracks your location, and provides you with a playlist depending on what the weather is in your area. We provide you with a youtube embedded video to view your music for the day and the ability to search the weather anywhere in the world.
+Also we included a joke generator. Just click the smiley face to bring a smile to yours.
 
-Got an important Hot Dates you cannot afford to miss? Lack of motivation to wake up in the morning? Trouble keeping track of your daily activities? Let Way-key transform your daily routine into a fun and motivational lifestyle. Way-key is developed to assist multi-level users to keep track of their busy schedule in this modern world . The special feature of this platform is to utilise Spotify music to add to alarm clock and scheduler. Whether you are exhausted from a big night out or feeling rebirth, select different playlist based on your current mood to kick start your day. The Schedule Planner is a versatile feature to let you keep track of your daily activities, events and so on by selecting specific music as a reminder. So let Way-key transform your day with your favourite music and never miss any appointment and most importantly - no more pressing on snooze button every ten minutes!
+https://recordsword.github.io/Way-Key/
 
+How to use:
+When you open our webpage, your location will be shown in the window where you can also search for the weather anywhere else in the world.
+When the weather is determined, a playlist will be generated based on this information. You can select any of the songs listed to view.
+If you want a joke, click the smiley face and a generated joke will appear on screen.
+
+![landing-page](assets/pics/Way-Key site.JPG)
+![smiley-clicked](assets/pics/Way-Key site(Joke generated, city searched).JPG)
+![flow-chart-map](Project Planning/User Stories Map.png)
+
+Technologies Utilised:
+jQuery
+Foundation
+OpenWeather API
+Youtube V3 API
+OpenCage API
+
+Authors
+Chris Klinger, Veronica Lim, Nick Sword
